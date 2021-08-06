@@ -1,0 +1,100 @@
+body, div, section, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.container-center{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#game{
+    width: 695px;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(img/Background.png);
+}
+
+.initLine-style{
+    width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box{
+    width: 33px;
+    height: 33px;
+}
+
+.box-player{
+    background-image: url(img/rat.jpg);
+    background-size: 100% 100%;
+    width: 33px;
+    height: 33px;
+    background-color: green;
+    box-shadow: 0px 0px 2px 3px rgb(43, 116, 47);
+    z-index: 1;
+}
+.box-end{
+    width: 33px;
+    height: 33px;
+    background-color: red;
+    box-shadow: 3px 3px 2px black;
+}
+.box-wall{
+    width: 33px;
+    height: 33px;
+    background-image: url(img/wall.png);
+    background-size: 100%;
+    box-shadow: 3px 3px 2px black;
+}
+.box-empty{
+    width: 33px;
+    height: 33px;
+
+}
+
+.tela_vitoria{
+    width: 300px;
+    height: 350px;
+    background-color: grey;
+    color: White;
+    position: absolute;
+    top: 10%;
+    left: 50%;;
+    transform: translateX(-50%) ;
+    z-index: 2;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 5px black;
+    
+}
+.tela_vitoria p{
+    font-size: 40px;
+    text-shadow: 2px 2px 1px black;
+}
+
+#restart{
+    margin: 5px;
+    padding: 10px;
+    background-color: rgb(48, 36, 36);
+    color: white;
+    font-weight: 900;
+    border-radius: 5px;
+    
+}
+
+.imagem-final{
+    width: 250px;
+    box-shadow: 1px 1px 5px 2px black;
+}
+
+.esconder{
+    display: none;
+}
