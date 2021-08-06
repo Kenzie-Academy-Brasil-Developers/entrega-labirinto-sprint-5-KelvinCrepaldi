@@ -118,11 +118,8 @@ addEventListener('keydown', function(e){
         playerX=0;
         playerY=9;
     }
-    if(playerX === -1 && playerY === 9){
-        map[playerY][playerX] = "F"
-        map[9][0] = "S"
-        playerX=0;
-        playerY=9;
+    if(playerX === 21 && playerY === 8){
+        map[playerY][playerX-1] = "S"
     }
 
     replaceMap()
@@ -131,6 +128,7 @@ addEventListener('keydown', function(e){
 let botao = document.getElementById('restart');
 botao.addEventListener('click', function(e){
     fim.style.display = 'none'
+    map[playerY][playerX]=' '
     map[8][20] = "F"
     map[9][0] = "S"
     playerX=0;
